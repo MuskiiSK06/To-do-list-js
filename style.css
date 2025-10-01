@@ -1,0 +1,237 @@
+:root{
+    --bg-clr: #17153B;
+    --main-clr: #2E236C;
+    --card-clr: #433D8B;
+    --list-bg-clr: #C8ACD6;
+    --heading-clr: #f4ccd2;
+    --font-clr: #101010d4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: var(--bg-clr);
+}
+
+main{
+    background-color: var(--main-clr);
+    margin: 1rem 1rem;
+    border-radius: .80rem;
+    padding: .80rem;
+}
+
+.logo{
+    border-radius: .80rem;
+    background-color: var(--card-clr);
+    display: flex;
+    align-items: center;
+}
+
+.logo > img{
+    height: 4.5rem;
+}
+
+.logo > .logo-heading{
+    font-family: Roboto-Condensed;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--heading-clr);
+}
+
+.task-section{
+    margin-top: 1.5rem;
+    border-radius: .80rem;
+    padding: 1rem .90rem;
+    background-color: var(--card-clr);
+}
+
+.task-section > #dateHeader{
+    color: var(--font-clr);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.task-input{
+    margin-top: .80rem;
+    display: flex;
+    position: relative;
+}
+
+.task-input input{
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.task-input button{
+    position: absolute;
+    right: 0;
+    padding: .80rem 3rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--list-bg-clr);
+    cursor: pointer;
+}
+
+.task-input button:hover{
+    background-color: #aa75c4;
+}
+
+.to-do-task{
+    margin-top: 1rem;
+    padding: 1rem .60rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.to-do-task .task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.task-list li{
+    width: 100%;
+    border: 1px solid #9f78b3;
+    color: var(--heading-clr);
+    list-style: none;
+    padding: 1rem;
+    border-radius: .80rem;
+    position: relative;
+    overflow: visible;
+}
+
+.task-list select{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    padding: 1rem;
+    font-size: 1.07rem;
+    text-align: center;
+    background-color: var(--list-bg-clr);
+    color: black;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.task-list select:hover{
+    background-color: rgb(243, 170, 206);
+}
+
+.task-list option{
+    text-align: start;
+}
+
+.task-list button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1rem;
+    border-top-right-radius: .80rem;
+    border-bottom-right-radius: .80rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    /* background-color: transparent; */
+}
+
+.task-list button:hover{
+        background-color: #e48098;
+}
+
+.task-list button i{
+    font-size: 1.1rem;
+}
+
+#task-list li,
+#task-list li * {
+  z-index: 0;
+}
+
+.no-task{
+    text-align: center;
+    margin-top: .80rem;
+    border-radius: 1rem;
+    padding: 4rem;
+}
+
+.no-task p{
+    display: inline-block;
+    width: 14rem;
+    line-height: 25px;
+    font-size: 1.1rem;
+    color: var(--heading-clr);
+}
+
+
+@media (max-width: 600px) {
+    .logo > img{
+        height: 3.5rem;
+    }
+    .logo > .logo-heading{
+        font-size: 1.2rem;
+    }
+    .task-section > #dateHeader{
+        font-size: .90rem;
+    }
+    .to-do-task{
+        margin-top: .50rem;
+    }
+    .task-list li{
+        padding: .80rem;
+        font-size: .90rem;
+    }
+    .task-list select{
+        padding: .90rem;
+        font-size: .85rem;
+    }
+    .task-list button{
+        padding: .78rem .82rem;
+    }
+}
+
+@media (max-width: 320px){
+    .task-section > #dateHeader{
+        font-size: .90rem;
+    }
+    .task-input input{
+        padding: .80rem;
+    }
+    .task-input button{
+        padding: .60rem 1rem;
+        font-size: 1.2rem;
+    }
+    .to-do-task{
+        margin-top: .1rem;
+    }
+    .task-list li{
+        padding: .60rem;
+        font-size: .70rem;
+    }
+    .task-list select{
+        right: 2rem;
+        padding: .80rem .65rem; 
+        font-size: .45rem;
+    }
+    .task-list button{
+        padding: .55rem .72rem;
+    }
+    .task-list button i{
+        font-size: .50rem;
+    }
+}
