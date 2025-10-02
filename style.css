@@ -197,11 +197,15 @@ main{
         font-size: .90rem;
     }
     .task-list select{
-        padding: .85rem;
-        font-size: .85rem;
+        right: 2.6rem;
+        padding: .90rem .50rem;
+        font-size: .80rem;
     }
     .task-list button{
-        padding: .72rem .82rem;
+        padding: .82rem .86rem;
+    }
+    .task-list button i{
+        font-size: .75rem;
     }
 }
 
@@ -225,11 +229,11 @@ main{
     }
     .task-list select{
         right: 2rem;
-        padding: .76rem .65rem; 
-        font-size: .45rem;
+        padding: .76rem .58rem; 
+        font-size: .42rem;
     }
     .task-list button{
-        padding: .50rem .70rem;
+        padding: .50rem .72rem;
     }
     .task-list button i{
         font-size: .50rem;
