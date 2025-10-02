@@ -87,8 +87,8 @@ main{
 }
 
 .to-do-task{
-    margin-top: 1rem;
-    padding: 1rem .60rem;
+    margin-top: .60rem;
+    padding: .60rem .60rem;
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
@@ -225,11 +225,11 @@ main{
     }
     .task-list select{
         right: 2rem;
-        padding: .80rem .65rem; 
+        padding: .76rem .65rem; 
         font-size: .45rem;
     }
     .task-list button{
-        padding: .55rem .72rem;
+        padding: .50rem .68rem;
     }
     .task-list button i{
         font-size: .50rem;
